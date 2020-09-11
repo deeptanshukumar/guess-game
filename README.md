@@ -1,6 +1,8 @@
 # you only have three chances!
-# the secret number can be set to anything, currently its 7
-secret_number = 7
+from random import seed
+from random import randint
+print('guess a number between 1 to 10')
+secret_number = randint(0,10)
 guess_limit = 3
 guess_count = 0
 while guess_count < guess_limit:
